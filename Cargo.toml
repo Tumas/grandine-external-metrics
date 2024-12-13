@@ -1,0 +1,12 @@
+[package]
+name = "grandine-external-metrics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = '1', features = ['backtrace'] }
+axum = { version = '0.7' }
+clap = { version = '4', features = ['derive'] }
+prometheus = '0.13'
+sysinfo = '0.31'
+tokio = { version = '1', features = ['fs', 'macros', 'rt-multi-thread', 'signal', 'sync', 'time'] }
